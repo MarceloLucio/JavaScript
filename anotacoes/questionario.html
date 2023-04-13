@@ -17,11 +17,12 @@
             <a href="#" class="especial">Exercício</a>
             <a href="#" class="especial">Desafios</a>
             <a href="questionario.html" class="especial">Questionário</a>
+            <a href="comandos.html" class="especial">Comandos</a>
         </nav>
     </header>
     <main>
         <article>
-            <h1>Questionário</h1>
+            <h1 class="ch1">Questionário</h1>
             <strong>
                 <p class="pergunta">O que ECMAScript tem a ver com JavaScript?</p>
             </strong>
@@ -65,28 +66,80 @@
                 <p class="pergunta">Quais são os tipos primitivos do JS?</p>
             </strong>
             <p>
-                <div class="lista">
-                    <ul>
-                        <li class="opcoes">Number
-                            <p class="lopcoes">infinity</p>
-                            <p class="lopcoes">NaN</p>
-                        </li>
-                        <li>string</li>
-                        <li>boolean</li>
-                        <li>null</li>
-                        <li>undefined</li>
-                        <li class="opcoes">object
-                            <p class="lopcoes">Array</p>
-                        </li>
-                        <li>function</li>
-                    </ul>
-                </div>
+            <div class="lista">
+                <ul>
+                    <li class="opcoes">Number
+                        <p class="lopcoes">infinity</p>
+                        <p class="lopcoes">NaN</p>
+                    </li>
+                    <li>string</li>
+                    <li>boolean</li>
+                    <li>null</li>
+                    <li>undefined</li>
+                    <li class="opcoes">object
+                        <p class="lopcoes">Array</p>
+                    </li>
+                    <li>function</li>
+                </ul>
+            </div>
 
-            </p>    
+            </p>
             <strong>
                 <p class="pergunta">Oque significa colocar o valor null dentro de uma variável?</p>
             </strong>
-            <p>O valor null é um literal em JavaScript que representa um valor nulo ou "vazio" (p/ex: que aponta para um objeto inexistente).</p>
+            <p>O valor null é um literal em JavaScript que representa um valor nulo ou "vazio" (p/ex: que aponta para um
+                objeto inexistente).</p>
+            <strong>
+                <p class="pergunta">Como é possivel guardar o valor digitado em um prompt() dentro de uma variável?</p>
+            </strong>
+            <p>Criando uma variável e atribuindo a ela o prompt, fazendo da seguinte maneira <span>var nome =
+                    window.prompt("Qual o seu nome?")</span> </p>
+            <strong>
+                <p class="pergunta">Como fazer com que um número digitado em um prompt() possa ser usado em cálculos?
+                </p>
+            </strong>
+            <p>Criando uma variável e atribuindo a ela o prompt utilizando o <span>Number</span> para transformar a
+                string em number inteiro ou real, fazendo da seguinte maneira <br>
+                <span>var n1 =
+                    Number(window.prompt("digite um número")) <br>
+                    var n2 = Number(window.prompt("digite outro número")) <br>
+                    var s = n1 + n2 <br>
+                    window.alert(`A soma entre os numeros ${n1} e ${n2} é igual a ${s}`)</span>
+            </p>
+            <strong>
+                <p class="pergunta">Como transformar um texto todo para letras MAIÚSCULAS?</p>
+            </strong>
+            <p>usando o metodo <span>.toUpperCase</span>
+                <!--usando o nome da variavel mais o comando, dessa forma "var.toUpperCase"-->
+            </p>
+            <strong>
+                <p class="pergunta">Como mostrar um número formatado como um valor monetário?</p>
+            </strong>
+            <p>Utilizando o metodo <span>.toFixed(2)</span> se eu quiser duas casas decimais e se caso eu queira trocar
+                algum objeto, tipo um ponto por uma virgula 1545.50 para 1545,50 eu faço da seguinte maneira
+                <span>.toFixed(2).replace('.',',')</span> nesse comando eu falei que quero trocar o ponto pela vírgula,
+                caso eu queira mostrar esse valor de 1545,50 em um valor monetário eu irei utilizar o metodo
+                <span>.toLocaleString('pt-BR' {style: 'currency', currency : 'BRL'}).replace('.',',')</span>
+                eu quis dizer na seguinte ordem toLocaleString('pt-BR') eu quero localizar para o Brasil e o estilo vai
+                currency que quer dizer dinheiro, e o dinheiro vai ser BRL Brasil Real. Caso eu queira mudar para dolar
+                ou outra moeda é so colocar a sígla da moeda desejada, USD e EUR por exemplo.
+            </p>
+            <strong>
+                <p class="pergunta">Para que serve o operador %em JS? seria para calcular porcentagem?</p>
+            </strong>
+            <p></p>
+            <strong>
+                <p class="pergunta">6 + 4 / 2 é igual a 5 ou 8?</p>
+            </strong>
+            <p></p>
+            <strong>
+            <p class="pergunta">Se uma variável "n" está valendo 10 e executamos um n += 5, qual será seu novo valor?</p>
+            </strong>
+            <p></p>
+            <strong>
+                <p class="pergunta">Para que servem os operadores ++ e --</p>
+            </strong>
+            <p></p>
         </article>
     </main>
 
