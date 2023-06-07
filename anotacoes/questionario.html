@@ -182,7 +182,7 @@
             </ul>
             </p>
             <p>
-            Operadores lógicos: <br>
+                Operadores lógicos: <br>
             <ul class="ldois">
                 <li>! negação</li>
                 <li>&& conjunção</li>
@@ -198,15 +198,65 @@
             </strong>
             <p>dentro de uma expressão iremos fazer primeiro os operadores aritimeticos, depois vem os operadores
                 relacionais, no qual não tem ordem de precedência, será feito o que vir primeiro da esquerda para a
-                direita, e por ultimo os operadores lógicos na seguinte ordem <span>!  &&  ||</span>
+                direita, e por ultimo os operadores lógicos na seguinte ordem <span>! && ||</span>
             </p>
             <strong>
                 <p class="pergunta">Sabe como usar o operador ternário para atribuições em JavaScript?</p>
             </strong>
             <p>Sim, operadores tenários são <span>? e :
-                    representandos da seguinte maneira: <br>
+                    representados da seguinte maneira: <br>
                     teste ? true : false
                 </span></p>
+            <strong>
+                <p class="pergunta">Você sabe o que significa a sigla DOM?</p>
+            </strong>
+            <p>Document Object Model, significa modelo de objeto para documentos.</p>
+            <strong>
+                <p class="pergunta">Sabe como criar uma árvore DOM para o seu site?</p>
+            </strong>
+            <p>Uma arvore DOM começa do window, que é uma janela onde abriga objetos como location, document, history e
+                outros,
+                dentro de document tem o html.
+            </p>
+            <strong>
+                <p class="pergunta">Sabe como usar o JavaScript para manipular o DOM?</p>
+            </strong>
+            <p>Adicionando comandos apartir da arvore dom, Adicionando metodos como por exemplo <br>
+                <span>window.document.getElementsByTagName('p')[0]</span> quando se é usado o comando no plural, tipo
+                elements, temos que especificar qual tag vai ser usada, utilizando o cochetes [] com o numero da ordem
+                da tag.
+            </p>
+            <strong>
+                <p class="pergunta">Você já entendeu como funciona o DOM com JavaScript?</p>
+            </strong>
+            <p>É um facilitador que existe dentro do navegador que da acesso aos elementos diretamente para o JavaScript.
+            </p>
+            <strong>
+                <p class="pergunta">O que é uma função? Como criar funções em JS?</p>
+            </strong>
+            <p>É um conjunto de códigos que so vão ser exucutados quando um evento correr. Exemplo de como criar uma
+                function: <br>
+                <span>
+                    <code>
+                        function somar(){ <br>
+                            var tnt1 = window.document.getElementById('txtn1') <br>
+                            var tnt2 = window.document.getElementById('txtn2') <br>
+                            var res = window.document.getElementById('res') <br>
+                            var n1 = Number(tnt1.value) <br>
+                            var n2 = Number(tnt2.value) <br>
+                            var s = n1 + n2 <br>
+                            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}.`} <br>
+                    </code>
+                </span>
+            </p>
+            <p>Antes de todo esse codigo, criamos id em input no HTML para que seja exucutada a soma de alguns valores e
+                criamos um evento de onclick e um button para que seja executada na function.</p>
+            <strong>
+                <p class="pergunta">Como pegar os valores de caixas de texto e fazer cáculos com eles?</p>
+            </strong>
+            <p>Criando variaveis, com o exemplo acima, após criar a variavel <span>tnt1 e tnt2</span> criamos a variável
+                <span>n1 e n2</span> com o metodo Number para tranformar a string em Number, dizendo que n1 e n2 terar o valor colocado na variável tnt1 e tnt2
+                e então criamos a variável <span>s</span> onde s recebe n1 + n2.</p>
         </article>
     </main>
 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Condições simples e compostas</h1>
+    <h2>Condição simples</h2>
+    <input type="number" id="vel" placeholder="Km/h">
+    <input type="button" value="Kmm/h" onclick="velocidade()">
+    <div id="res">
+        Km/h
+    </div>
+    <h2>Condição composta</h2>
+        <label for="pais">Qual país você nasceu</label>
+        <select name="pais" id="pais">
+            <option value="Brasil">Brasil</option>
+            <option value="França">França</option>
+            <option value="Japão">Japão</option>
+        </select>
+        <input type="button" value="resutado" onclick="resultado()">
+    <div id="rpais">
+        Resultado
+    </div>
+    <script>
+        function velocidade(){
+        var vel = window.document.getElementById('vel')
+        var res = window.document.getElementById('res')
+        var n1 = Number(vel.value)
+        res.innerHTML = `<p>A velocidade do seu carro é ${n1}Km/h</p>`
+        if (n1 > 60){
+            res.innerHTML += `Você ultrapassou a velocidade permitida. Multado!`
+        }
+        res.innerHTML += `<p>Dirija sempre usando o cinto de segurança.</p>`
+        
+        }
+        function resultado(){
+            var pais = window.document.getElementById('pais')
+            var res = window.document.getElementById('rpais')
+            var n2  = pais.value 
+            res.innerHTML = `<p>Se você nasceu em ${n2}.</p>`
+            if (n2 == 'Brasil'){
+                res.innerHTML += `<p>Você é Brasileiro </p>`
+        }else{
+            res.innerHTML += `<p>Você é Estrangeiro</p>`
+        }
+        }
+    </script>
+</body>
+</html>
