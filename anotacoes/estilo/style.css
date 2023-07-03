@@ -70,6 +70,19 @@ article h1{
 .ch1{
     text-align: center;
 }
+.quest_exer{ /*Paragrafo, de questão da pagina Exercicios*/
+    font-size: 1.4em;
+    text-indent: 0px;
+}
+.link_res{ /*Usado na pagina Exercicios para para identificar as respostas*/
+    text-decoration: none;
+    font-weight: bold;
+    color: darkgreen;
+}
+.link_res:hover{
+    text-decoration: underline;
+    color: rgb(2, 192, 2);
+}
 article p{
     text-indent: 30px;
     line-height: 1.5em;
@@ -80,7 +93,7 @@ span{
     background-color: var(--cor1);
     font-weight: bold;
 }
-a.ex{
+a.ex{ /*a.ex usada em questionario em exemplo*/
     font-weight: bold;
     text-decoration: none;
     color: var(--cor4);

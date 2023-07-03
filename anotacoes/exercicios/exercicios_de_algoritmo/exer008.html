@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Convertendo metros</h1>
+    <form action="soma">
+        <input type="number" name="num1" id="num1" placeholder="Number">+
+        <input type="button" value="start" id="start">
+        <div id="res">
+            Resposta
+        </div>
+    </form>
+    <script>
+        var f = window.document.getElementById('start')
+        f.addEventListener('click', Metros)
+        function Metros(){
+            var txnum1 = window.document.getElementById('num1')
+            var n = Number(txnum1.value)
+            var km = n / 1000
+            var hm = n / 100
+            var dam = n / 10
+            var dm = n * 10
+            var cm = n * 100
+            var mm = n * 1000
+            res.innerHTML = `A distância de ${n} corresponde a:<br>
+            ${km}Km <br> 
+            ${hm}Hm <br> 
+            ${dam}Dam <br>
+            ${dm}dm <br>
+            ${cm}cm<br>
+            ${mm}mm`
+        }
+    </script>
+</body>
+</html>

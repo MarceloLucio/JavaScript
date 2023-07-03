@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Real para dolar</h1>
+    <form action="soma">
+        <label for="num1">Quanto em Real você tem?</label>
+        <input type="number" name="num1" id="num1" placeholder="Number">
+        <input type="button" value="conversor" id="conversor">
+        <div id="res">
+            Resposta
+        </div>
+    </form>
+    <script>
+        var f = window.document.getElementById('conversor')
+        f.addEventListener('click', Converter)
+        function Converter(){
+            var txnum1 = window.document.getElementById('num1')
+            var res = window.document.getElementById('res')
+            var real = Number(txnum1.value)
+            var dolar = real * 4.88
+            res.innerHTML = `Se você tem R$${real}, você pode comprar U$${dolar}`
+
+        }
+    </script>
+</body>
+</html>

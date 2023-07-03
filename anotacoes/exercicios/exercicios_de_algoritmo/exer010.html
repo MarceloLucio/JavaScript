@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="soma">
+        <div>
+            <label for="num1">Quantos metros é a largura da sua parede?</label>
+            <input type="number" name="num1" id="num1">
+        </div>
+        <div>
+            <label for="num2">Quantos metros é a altura de sua parede?</label>
+            <input type="number" name="num2" id="num2">
+        </div>
+        <input type="button" value="Converter" id="start">
+        <div id="res">
+            Resposta
+        </div>
+        <script>
+            var f = window.document.getElementById('start')
+            f.addEventListener('click', Tinta)
+            function Tinta(){
+                var txnum1 = window.document.getElementById('num1')
+                var txnum2 = window.document.getElementById('num2')
+                var res = window.document.getElementById('res')
+                var n1 = Number(txnum1.value)
+                var n2 = Number(txnum2.value)
+                var area = n1 * n2
+                var t = area / 2
+                res.innerHTML = `Para pintar uma area de ${area}m² você precisa de ${t}L de tinta`
+                
+            }
+        </script>
+</body>
+</html>

@@ -26,11 +26,12 @@
     </div>
     <script>
         var a = window.document.getElementById('area')
+        //Eventos DOM
         a.addEventListener('click', clicar)
         a.addEventListener('mouseenter', entrar)
         a.addEventListener('mouseout', sair)
         
-        function clicar() {
+        function clicar() { //Função 
             a.innerText = 'Clicou!'
             a.style.background = 'red'
         }
