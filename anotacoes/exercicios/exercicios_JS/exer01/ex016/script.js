@@ -12,7 +12,7 @@ function Contar() {
         var f = Number(fi.value)
         var p = Number(pass.value)
         r.innerHTML = 'Contando: '
-        if(p == 0){
+        if (p == 0) {
             p = 1
             window.alert('Passo = 0, iremos considerar como 1')
         }
@@ -20,8 +20,8 @@ function Contar() {
             for (let c = i; c <= f; c += p) {
                 r.innerHTML += `[${c}] `
             }
-        }else{
-            for (let c = i; c >= f; c -= p){
+        } else {
+            for (let c = i; c >= f; c -= p) {
                 r.innerHTML += `[${c}]`
             }
         }
